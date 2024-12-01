@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie interactive</title>
+    <style>
+        /* Ajoutez votre style ici */
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+        }
+        img {
+            max-width: 100px;
+            cursor: pointer;
+        }
+        .large-image {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="large-image" id="largeImage" role="img" aria-label="Image principale"></div>
+        <div class="thumbnails">
+            <img src="image1.jpg" alt="Description 1" tabindex="0">
+            <img src="image2.jpg" alt="Description 2" tabindex="0">
+            <img src="image3.jpg" alt="Description 3" tabindex="0">
+            <img src="image4.jpg" alt="Description 4" tabindex="0">
+            <img src="image5.jpg" alt="Description 5" tabindex="0">
+            <img src="image6.jpg" alt="Description 6" tabindex="0">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
